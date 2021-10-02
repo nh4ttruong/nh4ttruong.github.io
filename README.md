@@ -1,5 +1,5 @@
-# About the page
-The zone which I archive my study and my experiments such as “Capture The Flag”,...
+# About the site
+I archive my study and my experiments such as write up CTF, some projects,...
 
 ## Some CTF Competitions 2021
 - Imaginary CTF 2021 (⭐⭐)
