@@ -8,4 +8,4 @@
   
 - name: Google Apps (Sheets, Docs,...)
   percentage: 80
-  color: 52325d
+  color: warning
