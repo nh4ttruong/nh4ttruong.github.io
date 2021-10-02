@@ -4,7 +4,7 @@
 
 - name: C/C++
   percentage: 70
-  color: light
+  color: danger
 
 - name: Python
   percentage: 50
