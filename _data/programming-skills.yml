@@ -1,11 +1,11 @@
-- name: HTML5/CSS3/JS
+- name: HTML/CSS/JS
   percentage: 50
-  color: danger
+  color: da1884
 
 - name: C/C++
   percentage: 70
-  color:
+  color: 0085ad
 
 - name: Python
-  percentage: 60
-  color: secondary
+  percentage: 50
+  color: 2dde98

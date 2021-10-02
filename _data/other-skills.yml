@@ -2,6 +2,10 @@
   percentage: 70
   color: info
 
-- name: Office 365/Google Apps
+- name: Office 365
   percentage: 80
   color: success
+  
+  - name: Google Apps (Sheets, Docs,...)
+  percentage: 80
+  color: 52325d
