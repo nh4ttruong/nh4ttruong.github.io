@@ -1,4 +1,4 @@
-- name: Adobe (Ps, Ai, Pr)
+- name: Adobe apps (Ps, Ai, Pr)
   percentage: 70
   color: info
 
@@ -6,6 +6,6 @@
   percentage: 80
   color: success
   
-  - name: Google Apps (Sheets, Docs,...)
+- name: Google Apps (Sheets, Docs,...)
   percentage: 80
   color: 52325d
