@@ -1,10 +1,10 @@
 - name: HTML/CSS/JS
   percentage: 55
-  color: da1884
+  color: success
 
 - name: C/C++
   percentage: 70
-  color: 0085ad
+  color: light
 
 - name: Python
   percentage: 50
