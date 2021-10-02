@@ -1,9 +1,9 @@
 ---
 title: RedTimeLonge CTF 2021
-tags: [write-up, ctf, redtimelonge]
+tags: [CTF Write-ups]
 style: fill
 color: warning
-description: Write-up in the RedTimeLonge CTF 2021
+description: Write up RedTimeLonge CTF 2021
 ---
 
 ## Expic - Forensic

@@ -1,9 +1,9 @@
 ---
 title: BSides Noida CTF 2021
-tags: [write-up, ctf, bsidenoidactf]
+tags: [CTF Write-ups]
 style: fill
 color: primary
-description: Write-up in the BSides Noida CTF 2021.
+description: Write up BSides Noida CTF 2021.
 ---
 
 Website: [https://ctf.bsidesnoida.in/](https://ctf.bsidesnoida.in/)
