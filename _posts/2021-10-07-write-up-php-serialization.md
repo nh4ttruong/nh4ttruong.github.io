@@ -8,7 +8,7 @@ description: This is the task from teacher at NT521.ANTT pratical class (Nghi Ho
 
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/cover.png)
 
-## Decription
+## Description
 This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa). My team called by **54010N** and you can meet us in [CTF Time](https://ctftime.org/team/143012)
 
 As teacher say, our work is find out flag of challenge by exploiting the PHP serialize/deserialize vulnerability.
