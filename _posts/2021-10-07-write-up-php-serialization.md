@@ -1,9 +1,9 @@
 ---
 title: PHP Serialization Challenge - NT521.ANTT LAB
 tags: [NT521.ANTT, CTF Write-ups]
-style: dark
-color: warning
-description: This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa) ^^. My team called by **54010N** and you can see us in [CTF Time](https://ctftime.org/team/143012)
+style: border
+color: dark
+description: This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa) ^^. My team called by 54010N.
 ---
 
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/cover.png)
@@ -43,7 +43,7 @@ We realize that at the line 5, author uses`$this->$name = $name;` instead of `$t
 
 By *our test below*, we see that the output will add a "54010N" property into User object with the value as same as property's name.
 
-[](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/usertest.png)
+![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/usertest.png)
 
 Moreover, the `$name` and `$is_admin` properties are changed to `Username` and `Useris_admin` ?? :smile: ??.  *What is special when author make that?* **(2)**
 
