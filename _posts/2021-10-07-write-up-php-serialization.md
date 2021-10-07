@@ -22,6 +22,7 @@ If you're lazy, you can see the quick code [here](https://raw.githubusercontent.
 By reading and following the code, we analysed the code and proposed a few judgments (*for convenient in handling, we get the code back local and handle on it*):
 
 **Source code overview**
+
 If `isset($_GET['code']` not null, the site will unserialize the code input which we can put it into the site to request.
 The code input is a object type. We have to serialize the code to right format and request to server. **(1)**
 
@@ -49,6 +50,7 @@ By *our test below*, we see that the output will add a "54010N" property into Us
 Moreover, the `$name` and `$is_admin` properties are changed to `Username` and `Useris_admin` ?? :smile: ??.  *What is special when author make that?* **(2)**
 
 **About *class Show_color***
+
 I put the code of User class here so that you can follow easily:
 ```php
 class Show_color{
@@ -69,6 +71,7 @@ You can see that this class have the `call_user_func()` which have the feature l
 In line `call_user_func($this->type->adu,$this->color);`, the first parameter will call `$this->type->adu` but *where is `adu` property?*
 
 **About *class do_nothing***
+
 As the class name, it's not relate to something in this challenge.
 
 ## Solution
