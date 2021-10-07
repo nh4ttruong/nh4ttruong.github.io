@@ -107,7 +107,8 @@ The *ls* command is not execute and the server return a error. So we need to rep
 - We have to change the `is_admin` from `false` to `true` by change the *"is_admin";b:0;"* as *"is_admin";b:1;"* so that we can become a importor as admin.
 - Specialy, the server is not compile `system("ls")` command because the `adu` property have *adu* value rather than *system* value. So, the system will be compile *adu("ls")* instead of *system("ls")*. That is the reason why we must to change the value of `adu` property to *"system"*.
 
-Now, let's request by the changed payload: `O:10:"Show_color":2:{s:5:"color";s:2:"ls";s:4:"type";O:4:"User":3:{s:4:"name";N;s:8:"is_admin";b:1;s:3:"adu";s:6:"system";}}`:
+Now, let's request by the changed payload:
+`O:10:"Show_color":2:{s:5:"color";s:2:"ls";s:4:"type";O:4:"User":3:{s:4:"name";N;s:8:"is_admin";b:1;s:3:"adu";s:6:"system";}}`
 
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/images/rightway.png)
 
