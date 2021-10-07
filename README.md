@@ -1,5 +1,5 @@
-# About the page
-The zone which I archive my study and my experiments such as “Capture The Flag”,...
+# About the site
+I archive my study and my experiments such as write up CTF, some projects,....
 
 ## Some CTF Competitions 2021
 - Imaginary CTF 2021 (⭐⭐)
@@ -9,7 +9,7 @@ The zone which I archive my study and my experiments such as “Capture The Flag
 - corCTF 2021 (⭐⭐⭐)
 - Down Under CTF 2021 (⭐⭐⭐⭐)
 
-You can read detaily at [this page](https://nh4ttruong.github.io)
-
+You can read detaily at [this page](https://nh4ttruong.github.io
 ## Note
-First, I make this repo to archive the write-up CTF. Now, I use it as a blog/portfolio for myself!
+- First, I make this repo to archive the write-up CTF.
+- Now, I use it as a blog/portfolio for myself!
