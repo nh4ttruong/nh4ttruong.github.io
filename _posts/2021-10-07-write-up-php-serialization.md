@@ -11,19 +11,19 @@ description: This is the task from teacher at NT521.ANTT pratical class (Nghi Ho
 ## Description
 This is our task from teacher at NT521.ANTT pratical class (Nghi Hoang Khoa). My team called by **54010N** and you can meet us in [CTF Time](https://ctftime.org/team/143012)
 
-As teacher say, our work is find out flag of challenge by exploiting the PHP serialize/deserialize vulnerability.
+As teacher say, our work is finding out flag of challenge by exploiting the PHP serialize/deserialize vulnerability.
 
 ## Challenge
 Link: *[http://45.122.249.68:10001](http://45.122.249.68:10001)*
 
-If you're lazy, you can see the quick code [here](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/chall.php)
+If you're lazy, you can view the quick code [here](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_posts/nt521-antt/chall.php)
 
 ## Analytics
-By reading and following the code, we analysed the code and proposed a few judgments (*for convenient in handling, we get the code back local and handle on it*):
+By reading and following the code, we analysed and proposed a few judgments (*for convenient in handling, we get the code back local and handle on it*):
 
 **Source code overview**
 
-If `isset($_GET['code']` not null, the site will unserialize the code input which we can put it into the site to request.
+If `isset($_GET['code']` is not null, the site will unserialize the code input which we can put it into the site to request.
 The code input is a object type. We have to serialize the code to right format and request to server.
 
 **About *class User***
