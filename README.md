@@ -1,8 +1,14 @@
-# About the site
-I archive my study and my experiments such as write up CTF, some projects,....
+# About me
 
-You can read detaily at [this page](https://nh4ttruong.github.io)
+I use this page to archive my study and my experiments such as write up CTF, some project's subjects,....
 
-## Note
-- First, I make this repo to archive the write-up CTF.
-- Now, I use it as a blog/portfolio for myself!
+You can read more at [this page](https://nh4ttruong.github.io)
+
+# About post on blog
+
+The post's topic relate to CTF, project, subject at school,....
+
+I hope that it will useful for you ^^
+
+All report please contact me at [email address](mailto:truongtbn243@gmail.com?subject=[GitHub Report] Source Han Sans) or [Facebook](https://fb.com/nh4ttruong). Thanks in advanced!
+
