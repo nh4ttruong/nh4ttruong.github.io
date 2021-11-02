@@ -1,14 +1,16 @@
 ---
-name: Google Apps Script
+name: Google Apps Script - Code sample
 tools: [Google Apps Script, Code Sample]
 image: https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_projects/cover/gg-apps-script.png
 description: This project has some small project which relate to Google Apps Scripts such as Google Sheets, Google Form. Besides, I have some application code sample.	
 ---
 ![](https://raw.githubusercontent.com/nh4ttruong/nh4ttruong.github.io/main/_projects/cover/appscript.jpg)
 
-# Google Apps Script
+# Google Apps Script - Code sample
 
 Apps Script lets you do more with Google, all on a modern JavaScript platform in the cloud. Build solutions to boost your collaboration and productivity. Home page: [App Script](https://developers.google.com/apps-script)
+
+Here, you can quick access to the main repo!!!
 
 ## Code samples	
 
