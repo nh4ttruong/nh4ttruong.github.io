@@ -63,7 +63,7 @@ Use `mkdir` to create a mountpoint:
 
 And mount `/dev/md0` into `/mnt/md0`:
 
-`sudo mount /dev/md0 /mnt/md0
+`sudo mount /dev/md0 /mnt/md0`
 
 ## Save and config a automatic reassemble and mount RAID array
 I was create a RAID array, and I wanna that the RAID array will be automatic reassembled at boot:
@@ -178,4 +178,4 @@ Good luck <3
 ## Note and reference
 - This is a post which is wrote to share the way to create and manage RAID array.
 - Special thank for linux.die.net and Digital Ocean Community.
-- If you like my post, let you give me a star in Github and a like/follow in the youtube video ^^. Thanks a lot <3
+- If you like my post, let you give me a star in Github and a like/follow in the youtube video 😄. Thanks a lot ❤️
