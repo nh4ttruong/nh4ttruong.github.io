@@ -1,3 +1,23 @@
+### Site Settings ###
+source              : ../
+collections_dir     : docs
+data_dir            : docs/_data
+baseurl             : "/"
+repository          : nh4ttruong
+open_new_tab        : false
+
+### Navbar Settings ###
+nav_exclude:
+  - docs/pages/tags.html
+  - docs/pages/404.html
+  - docs/pages/index.md
+  - docs/pages/documentation/**
+
+### Author Info ###
+author:
+  name              : Nhat Truong
+  image             : https://i.imgur.com/V60Nk1V.jpg
+  github            : nh4ttruong
 ### Posts ###
 permalink: /blog/:title
 ### Collections ###
