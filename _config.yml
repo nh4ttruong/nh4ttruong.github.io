@@ -9,21 +9,18 @@ open_new_tab        : false
 
 ### Navbar Settings ###
 nav_exclude:
-  - docs/pages/tags.html
-  - docs/pages/404.html
-  - docs/pages/index.md
-  - docs/pages/documentation/**
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
 
 ### Author Info ###
 author:
   name              : Nhat Truong
   image             : https://i.imgur.com/V60Nk1V.jpg
   github            : nh4ttruong
-# dribbble          : your_username
   email             : truongtbn243@gmail.com
   facebook          : nh4ttruong
   instagram         : nh4ttruong
-  github            : nh4ttruong
   youtube           : nh4ttruong
 
 ### Posts ###
@@ -54,6 +51,7 @@ defaults:
     values:
       comments: false                                   # Set to true to enable disqus comments
 
+### Plugin ###
 plugins:
   - jekyll-default-layout
   - jekyll-gist
