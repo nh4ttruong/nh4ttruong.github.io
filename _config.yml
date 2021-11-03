@@ -18,18 +18,22 @@ author:
   name              : Nhat Truong
   image             : https://i.imgur.com/V60Nk1V.jpg
   github            : nh4ttruong
+  
 ### Posts ###
 permalink: /blog/:title
+
 ### Collections ###
 collections:
   projects:
     output: true
     permalink: /projects/:name
+    
 ### Analytics ###
 analytics:
   enabled: true                                        # Set true to enable analytics
   google:
     tracking_id: G-6P2QMTRKX6
+    
 ### Defaults for collections ###
 defaults:
   - scope:
@@ -42,6 +46,14 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jemoji
+  
 ### Exclude from processing ###
 exclude:
   - LICENSE
