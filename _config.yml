@@ -4,7 +4,7 @@ description         : >-
                       The place where I archive my study, my experience about life, university time,....
 baseurl             : ""
 repository          : nh4ttruong
-remote_theme        : YoussefRaafatNasry/portfolYOU
+remote_theme        : YoussefRaafatNasry/portfolYOU@v2.3.0
 open_new_tab        : false
 
 ### Navbar Settings ###
