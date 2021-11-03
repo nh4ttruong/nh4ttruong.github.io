@@ -1,9 +1,10 @@
 ### Site Settings ###
-source              : ../
-collections_dir     : docs
-data_dir            : docs/_data
-baseurl             : "/"
+title               : portfolYOU
+description         : >-
+                      The place where I archive my study, my experience about life, university time,....
+baseurl             : ""
 repository          : nh4ttruong
+remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false
 
 ### Navbar Settings ###
@@ -18,7 +19,13 @@ author:
   name              : Nhat Truong
   image             : https://i.imgur.com/V60Nk1V.jpg
   github            : nh4ttruong
-  
+# dribbble          : your_username
+  email             : truongtbn243@gmail.com
+  facebook          : nh4ttruong
+  instagram         : nh4ttruong
+  github            : nh4ttruong
+  youtube           : nh4ttruong
+
 ### Posts ###
 permalink: /blog/:title
 
@@ -58,3 +65,4 @@ plugins:
 exclude:
   - LICENSE
   - "*.log"
+  - README.md
