@@ -1,0 +1,11 @@
+# Local Site Directories
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby Gems
+.bundle
+Gemfile.lock
+
+# Log Files
+*.log
