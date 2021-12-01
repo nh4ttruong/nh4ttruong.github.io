@@ -4,7 +4,7 @@ tools: [Django, HTML, CSS, JS]
 image: https://raw.githubusercontent.com/nh4ttruong/soundeed/main/images/soundeed.png
 description: SOUNDeeD is a chill site for everyone who need to relax or work with podomoro timer. This is a web application development project using Django, HTML/CSS/JS.
 ---
-# SOUNDeeD project
+# SOUNDeeD - Chill & Sound
 ![SOUNDeeD Website](https://raw.githubusercontent.com/nh4ttruong/soundeed/main/images/soundeed.png)
 
 ## About SOUNDeeD
@@ -29,8 +29,9 @@ SOUNDeeD can do:
 - Create playlist sound
 - Save the playlist to your gallery
 - Change static/dynamic background
-- Login/Signup function
-- Some sample for Google Sheets
+- Login/Signup functions
+
+Special thanks for [freesound.org](freesound.org) with the support for sound resources :heart:!
 
 <p class="text-center">
 {% include elements/button.html link="https://github.com/nh4ttruong/soundeed" text="View Github" %}
