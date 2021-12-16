@@ -2,7 +2,7 @@
 name: 54010N Tool - Basic Shell Script Tool
 tools: [Shell Script]
 image: https://raw.githubusercontent.com/nh4ttruong/54010nTool/main/thumb.jpg
-description: SOUNDeeD is a chill site for everyone who need to relax or work with podomoro timer. This is a web application development project using Django, HTML/CSS/JS.
+description: The basic bash script tool - Made by 54010N Team!.
 ---
 # 54010N Tool
 The basic bash script tool - Made by 54010N Team!
