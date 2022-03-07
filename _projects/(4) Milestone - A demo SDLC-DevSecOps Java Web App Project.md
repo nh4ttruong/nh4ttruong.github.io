@@ -25,12 +25,12 @@ I use:
 - Github: Store & archive sources, prepare for next stage
 - Maven: Build java project
 
-### Test & Scan Stage
+### Test & Scan Stages
 In this stage, I will use 2 type of scanning - SAST & DAST scan for this project:
 - SAST (Static Application Security Testing): OWASP Dependency-Check and SonarQube scan
 - DAST (Dynamic Application Security Testing): OWASP ZAP Proxy
 
-### Release & Deploy Stage
+### Release & Deploy Stages
 - Jenkins Tool
 - Heroku Cloud: for web app deploy and monitoring
 
