@@ -36,7 +36,7 @@ In this stage, I will use 2 type of scanning - SAST & DAST scan for this project
 
 ## Threat Modeling
 
-![DevSecOps Cycle](https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/cycle.pngthreatmodeling.png)
+![DevSecOps Cycle](https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/threatmodeling.png)
 
 ![Infomation Table](https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/info.png)
 
