@@ -1,7 +1,7 @@
 ---
 name: SDLC/DevSecOps simulation project on basic Java Web Application
 tools: [DevSecOps]
-image: https://raw.githubusercontent.com/nh4ttruong/milestone/images/cycle.png
+image: https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/cycle.png
 description: SDLC/DevSecOps cycle with basic Java Web Application. This project use Jenkins to integrations all of stages.
 ---
 # Milestone - SDLC/DevSecOps simulation project on basic Java Web Application
@@ -12,7 +12,7 @@ Learnathon is project which used to demo SDLC/DevSecOps cycle
 ## About Milestone DevSecOps cycle
 I use Jenkins for through out the process and all job is handled on it.
 
-![DevSecOps cycle](https://raw.githubusercontent.com/nh4ttruong/milestone/images/cycle.png)
+![DevSecOps cycle](https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/cycle.png)
 
 ### Plan & Analysist Stages
 - Prepare the checklist with [Security Knowledge Framework](https://www.securityknowledgeframework.org/)
@@ -36,9 +36,9 @@ In this stage, I will use 2 type of scanning - SAST & DAST scan for this project
 
 ## Threat Modeling
 
-![DevSecOps Cycle](https://raw.githubusercontent.com/nh4ttruong/milestone/images/cycle.pngthreatmodeling.png)
+![DevSecOps Cycle](https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/cycle.pngthreatmodeling.png)
 
-![Infomation Table](https://raw.githubusercontent.com/nh4ttruong/milestone/images/info.png)
+![Infomation Table](https://raw.githubusercontent.com/nh4ttruong/milestone/main/images/info.png)
 
 <p class="text-center">
 {% include elements/button.html link="https://github.com/nh4ttruong/milestone" text="Github Repo" %}
