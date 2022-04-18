@@ -21,4 +21,3 @@ Subject category challenges:
 - [PHP Challenges](https://github.com/nh4ttruong/root-me/blob/main/PHP/README.md)
 
 ## Find me at [nh4ttruong](https://github.com/nh4ttruong)
-
