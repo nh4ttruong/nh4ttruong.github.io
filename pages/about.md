@@ -8,7 +8,7 @@ weight: 3
 # **About me**
 
 Hi I am **{{ site.author.name }}** :wave:, welcome to my space!<br>
-The site just uses for archive my study and my experirence. It's maybe useless and boring to you but by the way, welcome to my site ^^<br>
+The site just store my study and experirences on the University. Welcome to my site ^^<br>
 
 <div class="row d-none">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
