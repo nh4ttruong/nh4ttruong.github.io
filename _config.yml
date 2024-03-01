@@ -1,11 +1,11 @@
 ### Site Settings ###
 title               : nh4ttruong
 description         : >-
-                      Tomorrow, Sun flower will bloom!
+                      Tomorrow, Sunflowers will bloom!
 baseurl             : ""
 repository          : nh4ttruong
-remote_theme        : YoussefRaafatNasry/portfolYOU@v2.3.0
 open_new_tab        : false
+google_analytics: G-6P2QMTRKX6
 
 ### Navbar Settings ###
 nav_exclude:
@@ -15,7 +15,7 @@ nav_exclude:
 
 ### Author Info ###
 author:
-  name              : Nhat Truong
+  name              : Nhật Trường
   image             : https://i.imgur.com/V60Nk1V.jpg
   github            : nh4ttruong
   email             : truongtbn243@gmail.com
@@ -23,7 +23,7 @@ author:
   instagram         : nh4ttruong
   youtube           : nh4ttruong
 
-### Posts ###
+### Permalink ###
 permalink: /blog/:title
 
 ### Collections ###
@@ -31,7 +31,13 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-    
+  blogs:
+    output: true
+    permalink: /blog/:title
+  shorteners:
+    output: false
+    permalink: /:slug/
+
 ### Analytics ###
 analytics:
   enabled: true                                        # Set true to enable analytics
@@ -49,7 +55,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
+      comments: true                                   # Set to true to enable disqus comments
 
 ### Plugin ###
 plugins:
@@ -58,6 +64,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-include-cache
   - jemoji
+  - jekyll-redirect-from
   
 ### Exclude from processing ###
 exclude:
