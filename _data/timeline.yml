@@ -1,14 +1,19 @@
 - title: Student, Huynh Man Dat Highschool for the Gifted
   from: 2016
   to: 2019
-  description: Math class
+  description: Far from home studying!
 
 - title: Student, University of Information Technology, VNU-HCM
   from: 2019
-  to: present
-  description: Information Security
+  to: 2022
+  description: Graduated in Engineer of Information Security
+
+- title: Internship, VNG Corporation
+  from: June 2022
+  to: October 2022
+  description: Joined internship and focused on System Operation and DevOps
 
 - title: Associate System Engineer, VNG Corporation
-  from: 2022
-  to: present
-  description: Starter
+  from: October 2022
+  to: Present
+  description: Work as Associate System Engineer with both System Engineer and DevOps role.

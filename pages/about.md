@@ -5,10 +5,12 @@ permalink: /about/
 weight: 3
 ---
 
-# **About me**
+## **About me**
 
-Hi I am **{{ site.author.name }}** :wave:, welcome to my space!<br>
-The site just store my study and experirences on the University. Welcome to my site ^^<br>
+Hi there,<br>
+<br>
+Welcome you guys to my site, and I'm **{{ site.author.name }}** :wave:!<br>
+<br>
 
 <div class="row d-none">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
