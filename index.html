@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="google-site-verification=1NYCDOpScvKHtTmFiuSbfQhvNigMwWaPt5HQ8vdpMgs" />
+  <meta name="google-site-verification"
+    content="google-site-verification=1NYCDOpScvKHtTmFiuSbfQhvNigMwWaPt5HQ8vdpMgs" />
 
   <meta property="og:title" content="nh4ttruong" />
-  <meta property="og:description" content="Hey friend 👋 This is a temporary holding page for nh4ttruong. You'll be redirected to nh4ttruong.me soon." />
+  <meta property="og:description"
+    content="Hey friend 👋 This is a temporary holding page for nh4ttruong. You'll be redirected to nh4ttruong.me soon." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nh4ttruong.github.io" />
   <meta property="og:image" content="https://nh4ttruong.github.io/assets/logo.png" />
@@ -16,7 +18,8 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="nh4ttruong" />
-  <meta name="twitter:description" content="A temporary holding page for nh4ttruong. Redirecting soon to nh4ttruong.me" />
+  <meta name="twitter:description"
+    content="A temporary holding page for nh4ttruong. Redirecting soon to nh4ttruong.me" />
   <meta name="twitter:image" content="https://nh4ttruong.github.io/assets/logo.png" />
 
   <title>nh4ttruong</title>
@@ -74,14 +77,16 @@
         cd.textContent = "Redirecting in " + sec + "s";
         const iv = setInterval(() => {
           sec--;
-          if (sec > 0) cd.textContent = "Redirecting in " + sec + "s";
-          else {
+          if (sec > 0) {
+            cd.textContent = "Redirecting in " + sec + "s";
+          } else {
             clearInterval(iv);
-            window.location.replace("https://nh4ttruong.me");
+            window.location.href = "https://nh4ttruong.me";
           }
         }, 1000);
       }
     }
+
     typeLine();
   </script>
 </body>
