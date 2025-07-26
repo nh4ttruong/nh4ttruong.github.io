@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(135deg, #eb60ad, #7efba5);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  color: #7efba5;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.3;
+  animation: blink 3s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 0.2; }
+  to { opacity: 0.4; }
+}
+
+.terminal {
+  width: 650px;
+  max-width: 90vw;
+  min-height: 250px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(235, 96, 173, 0.4),
+              0 0 35px rgba(126, 251, 165, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.terminal-header {
+  background: #2c2c2c;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.red { background: #ff5f57; }
+.yellow { background: #febc2e; }
+.green { background: #28c840; }
+
+.terminal-body {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #7efba5;
+  font-family: 'Menlo', 'Monaco', 'Fira Code', monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.terminal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.countdown {
+  font-size: 1rem;
+  color: #eb60ad;
+  margin-top: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #eb60ad;
+}
+
+.highlight.yellow {
+  color: #eb60ad;
+}
+
+#typewriter {
+  line-height: 1.7rem;
+}
+
+@media (max-width: 600px) {
+  .terminal {
+    width: 95vw;
+    min-height: 200px;
+    padding-bottom: 8px;
+  }
+
+  .terminal-body {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+
+  #typewriter {
+    line-height: 1.5rem;
+  }
+}

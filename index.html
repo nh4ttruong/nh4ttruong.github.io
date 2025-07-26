@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nh4ttruong</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="btn red"></span>
+      <span class="btn yellow"></span>
+      <span class="btn green"></span>
+    </div>
+    <div class="terminal-body">
+      <div id="typewriter"></div>
+      <div id="countdown" class="countdown"></div>
+    </div>
+
+  </div>
+
+  <script>
+    const text = [
+      "Hey friend 👋",
+      "You’ve landed on a holding page for <span class='highlight'>nh4ttruong</span>.",
+      "Sit back for a moment — we’ll bring you to the <span class='highlight'>nh4ttruong.me</span> ^^",
+    ];
+
+    let line = 0, char = 0;
+    const speed = 25;
+    const el = document.getElementById('typewriter');
+    const cd = document.getElementById('countdown');
+
+    function typeLine() {
+      if (line < text.length) {
+        if (char < text[line].length) {
+          if (text[line][char] === "<") {
+            const endTag = text[line].indexOf(">", char) + 1;
+            el.innerHTML += text[line].substring(char, endTag);
+            char = endTag;
+            setTimeout(typeLine, 0);
+          } else {
+            el.innerHTML += text[line][char];
+            char++;
+            setTimeout(typeLine, speed);
+          }
+        } else {
+          el.innerHTML += "\n";
+          line++;
+          char = 0;
+          setTimeout(typeLine, 300);
+        }
+      } else {
+        let sec = 5;
+        cd.textContent = "Redirecting in " + sec + "s";
+        const iv = setInterval(() => {
+          sec--;
+          if (sec > 0) cd.textContent = "Redirecting in " + sec + "s";
+          else {
+            clearInterval(iv);
+            window.location.replace("https://nh4ttruong.me");
+          }
+        }, 1000);
+      }
+    }
+    typeLine();
+  </script>
+</body>
+
+</html>
